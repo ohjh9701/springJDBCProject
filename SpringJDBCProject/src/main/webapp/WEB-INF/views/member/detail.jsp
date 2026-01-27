@@ -145,26 +145,26 @@
 
     <div class="profile-body">
         <h2>${member.nickName}</h2>
-        <span class="role">OFFICIAL AGENT</span>
+        <span class="role">T1 COMMUNITY 마이페이지</span>
 
         <div class="info-list">
             <div class="info-item">
-                <label>IDENTIFICATION (ID)</label>
+                <label>아이디</label>
                 <span>${member.id}</span>
             </div>
             <div class="info-item">
-                <label>CONTACT EMAIL</label>
+                <label>이메일</label>
                 <span>${member.email}</span>
             </div>
             <div class="info-item">
-                <label>SECURITY LEVEL</label>
+                <label>소개창</label>
                 <span style="color: var(--t1-gold);">${member.nickName}님 환영합니다.</span>
             </div>
         </div>
 
         <div class="btn-group">
-            <a href="/member/logout" class="btn btn-logout">LOGOUT</a>
-            <a href="/member/updateForm" class="btn btn-edit">EDIT PROFILE</a>
+            <a href="/member/logout" class="btn btn-logout">로그아웃</a>
+            <a href="/member/updateForm" class="btn btn-edit">회원수정</a>
         </div>
     </div>
 </div>

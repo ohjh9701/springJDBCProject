@@ -116,7 +116,7 @@
 <div class="login-card">
     <div class="header">
         <h1>LOGIN TO <span>T1</span></h1>
-        <p>Welcome back, Agent</p>
+        <p>Welcome To T1 Community</p>
     </div>
 
     <div class="error-msg">${errorMessage}</div>
@@ -136,7 +136,7 @@
     </form>
 
     <div class="footer-links">
-        Don't have an account? <a href="/member/insertForm">Sign Up</a>
+        아직 회원이 아니신가요? <a href="/member/insertForm">회원가입</a>
     </div>
 </div>
 

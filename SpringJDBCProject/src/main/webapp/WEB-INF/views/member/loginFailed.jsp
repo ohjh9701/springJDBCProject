@@ -116,8 +116,8 @@
     <h2>LOGIN <span>FAILED</span></h2>
     <p>아이디 또는 비밀번호가 일치하지 않습니다.<br>정보를 다시 확인해 주세요.</p>
 
-    <a href="/member/loginForm" class="btn-retry">RETRY LOGIN</a>
-    <a href="javascript:history.back()" class="btn-back">GO BACK</a>
+    <a href="/member/loginForm" class="btn-retry">다시 로그인</a>
+    <a href="javascript:history.back()" class="btn-back">돌아가기</a>
 
     <div class="footer-msg">
         [ ERROR_CODE: AUTH_TERMINATED ]

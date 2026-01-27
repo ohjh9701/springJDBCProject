@@ -148,8 +148,8 @@
 <div class="join-card">
     <div class="gold-line"></div>
     <div class="header">
-        <h1>JOIN <span>T1</span></h1>
-        <p>Enter your details to join the roster</p>
+        <h1>T1 COMMUNITY <span>회원가입</span></h1>
+        <p>아래 정보를 입력해주세요.</p>
     </div>
 
     <form action="/member/insert" method="post">
@@ -177,7 +177,7 @@
     </form>
 
     <div class="footer">
-        Already a member? <a href="/member/login">로그인</a>
+        이미 회원이신가요? <a href="/member/login">로그인</a>
     </div>
 </div>
 

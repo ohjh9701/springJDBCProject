@@ -119,27 +119,17 @@
 
 <div class="welcome-card">
     <div class="icon-wrapper">🏆</div>
-    <h2>WELCOME TO <span>T1</span></h2>
-    <p>성공적으로 계정이 활성화되었습니다.<br>이제 T1의 역사를 함께 써 내려가세요.</p>
+    <h2>WELCOME TO <span>T1 COMMUNITY</span></h2>
+    <p>회원가입이 완료되었습니다.<br>${member.nickName}님의 건전한 활동을 응원합니다.</p>
 
     <div class="info-box">
-        <span>ACTIVATED AGENT</span>
-        <strong>${member.nickName} 요원님, 환영합니다!</strong>
+        <span>T1 COMMUNITY</span>
+        <strong>${member.nickName} 회원님, 환영합니다!</strong>
     </div>
 
-    <a href="/member/loginForm" class="btn-home">GO TO LOGIN</a>
+    <a href="/member/loginForm" class="btn-home">Login</a>
 
-    <div class="auto-redirect">
-        잠시 후 로그인 페이지로 이동합니다...
-    </div>
 </div>
-
-<script>
-    // 5초 후 로그인 폼으로 자동 이동
-    setTimeout(function() {
-        location.href = "/member/loginForm";
-    }, 5000);
-</script>
 
 </body>
 </html>

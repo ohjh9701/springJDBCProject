@@ -123,7 +123,7 @@
 
 <div class="fail-card">
     <div class="icon-wrapper">⚠️</div>
-    <h2>ACCESS <span>DENIED</span></h2>
+    <h2>Sign Up <span>Failed</span></h2>
     <p>회원가입 처리 중 오류가 발생했습니다.<br>입력하신 정보를 다시 확인해 주세요.</p>
 
     <div class="error-msg-box">
@@ -131,8 +131,8 @@
     </div>
 
     <div class="btn-group">
-        <a href="javascript:history.back()" class="btn btn-back">PREVIOUS STEP</a>
-        <a href="/member/insertForm" class="btn btn-retry">TRY AGAIN</a>
+        <a href="/member/loginForm" class="btn btn-back">로그인창 이동</a>
+        <a href="/member/insertForm" class="btn btn-retry">다시 가입하기</a>
     </div>
 
     <div class="footer-deco">
