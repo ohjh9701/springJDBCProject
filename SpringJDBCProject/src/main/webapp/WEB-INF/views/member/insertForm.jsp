@@ -152,7 +152,7 @@
         <p>Enter your details to join the roster</p>
     </div>
 
-    <form action="/users/insert" method="post">
+    <form action="/member/insert" method="post">
         <div class="form-group">
             <label for="id">아이디</label>
             <input type="text" id="id" name="id" placeholder="Enter ID" required>
@@ -177,7 +177,7 @@
     </form>
 
     <div class="footer">
-        Already a member? <a href="/users/loginForm">로그인</a>
+        Already a member? <a href="/member/login">로그인</a>
     </div>
 </div>
 
