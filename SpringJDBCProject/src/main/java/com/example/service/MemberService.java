@@ -10,6 +10,8 @@ public interface MemberService {
 	
 	public Member selectById(Member member) throws Exception;
 	
+	public Member selectByPw(Member member) throws Exception;
+
 	public Member loginMember(Member member) throws Exception;
 	
 	public int updateMember(Member member) throws Exception;
@@ -17,4 +19,7 @@ public interface MemberService {
 	public int deleteMember(Member member) throws Exception;
 	
 	public List<Member> memberList() throws Exception;
+
+	public int updatePw(Member m) throws Exception;
+
 }

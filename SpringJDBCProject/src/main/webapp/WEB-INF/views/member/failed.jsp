@@ -124,7 +124,7 @@
 <div class="fail-card">
     <div class="icon-wrapper">⚠️</div>
     <h2>Sign Up <span>Failed</span></h2>
-    <p>회원가입 처리 중 오류가 발생했습니다.<br>입력하신 정보를 다시 확인해 주세요.</p>
+    <p>${message}<br>입력하신 정보를 다시 확인해 주세요.</p>
 
     <div class="error-msg-box">
         [ ERROR_CODE: ${errorMessage != null ? errorMessage : "REGISTRATION_FAILED"} ]

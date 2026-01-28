@@ -126,6 +126,7 @@
     }
 
     .btn-edit { background: var(--t1-text); color: #fff; }
+    .btn-delete { background: #151515; color: #fff; }
     .btn-logout { background: #eee; color: #666; }
 
     .btn:hover {
@@ -134,12 +135,38 @@
     }
 
     .btn-edit:hover { background: var(--t1-red); }
+    .btn-delete:hover { background: var(--t1-red); }
+    /* 전체 회원 리스트 보기 버튼 전용 스타일 */
+    .btn-admin-list {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: rgba(255, 255, 255, 0.2); /* 반투명한 화이트 */
+        color: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        transition: 0.3s;
+        backdrop-filter: blur(5px); /* 배경 블러 효과로 세련미 추가 */
+    }
+
+    .btn-admin-list:hover {
+        background: var(--t1-gold);
+        border-color: var(--t1-gold);
+        color: var(--t1-text);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
 </style>
 </head>
 <body>
 
 <div class="profile-card">
     <div class="profile-banner">
+        <a href="/member/memberList" class="btn-admin-list">전체 회원 리스트 보기</a>
+        
         <div class="profile-avatar">🛡️</div>
     </div>
 
@@ -165,6 +192,7 @@
         <div class="btn-group">
             <a href="/member/logout" class="btn btn-logout">로그아웃</a>
             <a href="/member/updateForm" class="btn btn-edit">회원수정</a>
+            <a href="/member/delete" class="btn btn-delete">회원탈퇴</a>
         </div>
     </div>
 </div>

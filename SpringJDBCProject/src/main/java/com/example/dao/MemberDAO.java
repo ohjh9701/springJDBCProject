@@ -45,6 +45,89 @@ public class MemberDAO {
 		
 		return memberList.isEmpty() ? null : memberList.get(0);
 	}
+
+	public int updateMember(Member member) {
+		String query = "UPDATE MEMBER SET PASSWORD = ?, NICKNAME = ?, EMAIL = ? WHERE ID = ?";
+		
+		int count = jdbcTemplate.update(query, member.getPassword(), member.getNickName(), member.getEmail(), member.getId());
+		
+		return count;
+	}
+
+	public int deleteMember(Member member) {
+		String query = "DELETE FROM MEMBER WHERE ID = ?";
+		
+		int count = jdbcTemplate.update(query, member.getId());
+		
+		return count;
+	}
+
+	public Member selectById(Member m) {
+		String query = "SELECT * FROM MEMBER WHERE EMAIL = ?";
+		
+		List<Member> memberList = jdbcTemplate.query(query, new RowMapper<Member>() {
+			@Override
+			public Member mapRow(ResultSet rs, int rowNum) throws SQLException {
+				Member member = new Member();
+				
+				member.setId(rs.getString("ID"));
+				member.setPassword(rs.getString("PASSWORD"));
+				member.setNickName(rs.getString("NICKNAME"));
+				member.setEmail(rs.getString("EMAIL"));
+				
+				return member;
+			}
+		}, m.getEmail());
+		
+		return memberList.isEmpty() ? null : memberList.get(0);
+	}
+	
+	public Member selectByPw(Member m) {
+		String query = "SELECT * FROM MEMBER WHERE ID = ? AND EMAIL = ?";
+		
+		List<Member> memberList = jdbcTemplate.query(query, new RowMapper<Member>() {
+			@Override
+			public Member mapRow(ResultSet rs, int rowNum) throws SQLException {
+				Member member = new Member();
+				
+				member.setId(rs.getString("ID"));
+				member.setPassword(rs.getString("PASSWORD"));
+				member.setNickName(rs.getString("NICKNAME"));
+				member.setEmail(rs.getString("EMAIL"));
+				
+				return member;
+			}
+		}, m.getId(), m.getEmail());
+		
+		return memberList.isEmpty() ? null : memberList.get(0);
+	}
+
+	public int updatePw(Member m) {
+		String query = "UPDATE MEMBER SET PASSWORD = ? WHERE ID = ?";
+		
+		int count = jdbcTemplate.update(query, m.getPassword(), m.getId());
+		
+		return count;
+	}
+
+	public List<Member> memberList() {
+		String query = "SELECT * FROM MEMBER";
+		
+		List<Member> memberList = jdbcTemplate.query(query, new RowMapper<Member>() {
+			@Override
+			public Member mapRow(ResultSet rs, int rowNum) throws SQLException {
+				Member member = new Member();
+				
+				member.setId(rs.getString("ID"));
+				member.setPassword(rs.getString("PASSWORD"));
+				member.setNickName(rs.getString("NICKNAME"));
+				member.setEmail(rs.getString("EMAIL"));
+				
+				return member;
+			}
+		});
+		return memberList;
+	}
 	
 	
 }

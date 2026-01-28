@@ -148,32 +148,26 @@
 <div class="join-card">
     <div class="gold-line"></div>
     <div class="header">
-        <h1>T1 COMMUNITY <span>회원가입</span></h1>
+        <h1>T1 COMMUNITY <span>PW 재설정</span></h1>
         <p>아래 정보를 입력해주세요.</p>
     </div>
 
-    <form action="/member/insert" method="post">
-        <div class="form-group">
-            <label for="id">아이디</label>
-            <input type="text" id="id" name="id" placeholder="Enter ID" required>
-        </div>
+    <form action="/member/updatePw" method="post">
 
         <div class="form-group">
-            <label for="password">비밀번호</label>
+            <label for="id">현재 ID</label>
+            <input type="text" id="id" name="id" value="${member.id}" readonly="readonly">
+        </div>
+        <div class="form-group">
+            <label for="password">재설정할 비밀번호 입력</label>
             <input type="password" id="password" name="password" placeholder="••••••••" required>
         </div>
-
         <div class="form-group">
-            <label for="nickName">닉네임</label>
-            <input type="text" id="nickName" name="nickName" placeholder="Your Nickname" required>
+            <label for="passwordCheck">재설정할 비밀번호 확인</label>
+            <input type="password" id="passwordCheck" name="passwordCheck" placeholder="••••••••" required>
         </div>
 
-        <div class="form-group">
-            <label for="email">이메일</label>
-            <input type="email" id="email" name="email" placeholder="example@t1.gg" required>
-        </div>
-
-        <button type="submit" class="btn-submit">회원가입</button>
+        <button type="submit" class="btn-submit">비밀번호 재설정</button>
     </form>
 
     <div class="footer">
