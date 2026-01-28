@@ -120,11 +120,11 @@
 <div class="welcome-card">
     <div class="icon-wrapper">🏆</div>
     <h2>WELCOME TO <span>T1 COMMUNITY</span></h2>
-    <p>회원가입이 완료되었습니다.<br>${member.nickName}님의 건전한 활동을 응원합니다.</p>
+    <p>${message}</p>
 
     <div class="info-box">
         <span>T1 COMMUNITY</span>
-        <strong>${member.nickName} 회원님, 환영합니다!</strong>
+        <strong>LCK 대표 E-Sports Team! T1</strong>
     </div>
 
     <a href="/member/loginForm" class="btn-home">Login</a>

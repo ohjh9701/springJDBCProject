@@ -148,36 +148,21 @@
 <div class="join-card">
     <div class="gold-line"></div>
     <div class="header">
-        <h1>T1 COMMUNITY <span>회원가입</span></h1>
+        <h1>T1 COMMUNITY <span>ID 찾기</span></h1>
         <p>아래 정보를 입력해주세요.</p>
     </div>
 
-    <form action="/member/insert" method="post">
+    <form action="/member/idList" method="post">
         <div class="form-group">
-            <label for="id">아이디</label>
-            <input type="text" id="id" name="id" placeholder="Enter ID" required>
-        </div>
-
-        <div class="form-group">
-            <label for="password">비밀번호</label>
-            <input type="password" id="password" name="password" placeholder="••••••••" required>
-        </div>
-
-        <div class="form-group">
-            <label for="nickName">닉네임</label>
-            <input type="text" id="nickName" name="nickName" placeholder="Your Nickname" required>
-        </div>
-
-        <div class="form-group">
-            <label for="email">이메일</label>
+            <label for="email">가입하신 이메일 입력</label>
             <input type="email" id="email" name="email" placeholder="example@t1.gg" required>
         </div>
 
-        <button type="submit" class="btn-submit">회원가입</button>
+        <button type="submit" class="btn-submit">ID 찾기</button>
     </form>
 
     <div class="footer">
-        이미 회원이신가요? <a href="/member/loginForm">로그인</a>
+        로그인 하시겠습니까? <a href="/member/loginForm">로그인</a>
     </div>
 </div>
 

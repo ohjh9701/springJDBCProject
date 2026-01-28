@@ -21,9 +21,9 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	@Override
-	public Member selectById(Member member) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+	public Member selectById(Member m) throws Exception {
+		Member member = memberDAO.selectById(m);
+		return member;
 	}
 
 	@Override
@@ -34,20 +34,32 @@ public class MemberServiceImpl implements MemberService {
 
 	@Override
 	public int updateMember(Member member) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		int count = memberDAO.updateMember(member);
+		return count;
 	}
 
 	@Override
 	public int deleteMember(Member member) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		int count = memberDAO.deleteMember(member);
+		return count;
 	}
 
 	@Override
 	public List<Member> memberList() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		List<Member> memberList = memberDAO.memberList();
+		return memberList;
+	}
+
+	@Override
+	public Member selectByPw(Member m) throws Exception {
+		Member member = memberDAO.selectByPw(m);
+		return member;
+	}
+
+	@Override
+	public int updatePw(Member m) throws Exception {
+		int count = memberDAO.updatePw(m);
+		return count;
 	}
 
 }

@@ -136,7 +136,9 @@
     </form>
 
     <div class="footer-links">
-        아직 회원이 아니신가요? <a href="/member/insertForm">회원가입</a>
+        아직 회원이 아니신가요? <a href="/member/insertForm">회원가입</a><br>
+        회원정보를 잊어버리셨나요? <a href="/member/searchId">ID 찾기</a><br>
+        비밀번호를 잊어버리셨나요? <a href="/member/searchPw">PW 찾기</a>
     </div>
 </div>
 

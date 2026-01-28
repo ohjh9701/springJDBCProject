@@ -148,36 +148,25 @@
 <div class="join-card">
     <div class="gold-line"></div>
     <div class="header">
-        <h1>T1 COMMUNITY <span>회원가입</span></h1>
+        <h1>T1 COMMUNITY <span>PW 찾기</span></h1>
         <p>아래 정보를 입력해주세요.</p>
     </div>
 
-    <form action="/member/insert" method="post">
+    <form action="/member/insertPw" method="post">
         <div class="form-group">
-            <label for="id">아이디</label>
-            <input type="text" id="id" name="id" placeholder="Enter ID" required>
+            <label for="id">가입하신 아이디 입력</label>
+            <input type="text" id="id" name="id" placeholder="가입하신 ID를 입력해주세요." required>
         </div>
-
         <div class="form-group">
-            <label for="password">비밀번호</label>
-            <input type="password" id="password" name="password" placeholder="••••••••" required>
-        </div>
-
-        <div class="form-group">
-            <label for="nickName">닉네임</label>
-            <input type="text" id="nickName" name="nickName" placeholder="Your Nickname" required>
-        </div>
-
-        <div class="form-group">
-            <label for="email">이메일</label>
+            <label for="email">가입하신 이메일 입력</label>
             <input type="email" id="email" name="email" placeholder="example@t1.gg" required>
         </div>
 
-        <button type="submit" class="btn-submit">회원가입</button>
+        <button type="submit" class="btn-submit">PW 찾기</button>
     </form>
 
     <div class="footer">
-        이미 회원이신가요? <a href="/member/loginForm">로그인</a>
+        아이디를 잊어버리셨나요? <a href="/member/searchId">아이디 찾기</a>
     </div>
 </div>
 
