@@ -6,7 +6,7 @@
 ## 프로젝트 개요
 이 프로젝트는 **Java Spring Boot**와 **JDBC**, **Oracle DB**를 기반으로 한 풀스택 회원 관리 웹 애플리케이션입니다. 사용자 경험(UX)을 고려한 세련된 UI와 안정적인 백엔드 로직 구현에 집중했습니다.
 
-## 🛠 Tech Stack
+## Tech Stack
 | Category | Tech Stack |
 | :--- | :--- |
 | **Language** | Java 17 |
@@ -15,7 +15,7 @@
 | **Frontend** | JSP (Modern Flexbox) |
 | **Library** | Lombok, Spring JDBC (JdbcTemplate), Slf4j |
 
-## 🚀 주요 구현 기능
+## 주요 구현 기능
 본 프로젝트는 회원 관리의 핵심인 **CRUD** 사이클을 완벽하게 구현했습니다.
 
 ### 1. 회원가입 및 로그인 (Authentication)
@@ -31,7 +31,7 @@
 ### 3. 회원 리스트 출력 (Member List View)
 - **Member Roster:** 전체 가입 회원 명단을 한눈에 확인하는 대시보드 구현
 
-## 📂 Project Structure
+## Project Structure
 ```text
 com.example
 ├── controller  # 요청 매핑 및 서비스 호출 (MemberController)
